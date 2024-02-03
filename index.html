@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h>
+    <header  id="main-header">
         <h1>Play Tic, Tac, Toe</h1>
         <p>Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
-    </h>
+    </header>
     <main>
         <aside>
             <h2>Choose Your Name</h2>
@@ -19,8 +23,8 @@
                 <input type="text" id="playername" name="username" placeholder="Player 1 Name" required>
                 </div>
                 <div>
-                    <buton type="button">Cancel</buton>
-                    <buton type="submit">Confirm</buton>
+                    <buton type="button" class="btn btn-alt">Cancel</buton>
+                    <buton type="submit" class="btn">Confirm</buton>
                 </div>
             </form>
         </aside>
@@ -31,17 +35,17 @@
                         <h2>Player 1</h2>
                         <h3>PLAYER NAME</h3>
                         <P>X</P>
-                        <button>Edit</button>
+                        <button class="btn btn-alt">Edit</button>
                     </article>
                 </li>
                 <li>
                     <h2>Player 2</h2>
                         <h3>PLAYER NAME</h3>
                         <P>O</P>
-                        <button>Edit</button>
+                        <button class="btn btn-alt">Edit</button>
                 </li>
             </ol>
-            <button id="start-game">Start New Game</button>
+            <button id="start-game" class="btn">Start New Game</button>
         </sec>
         <sec id="active-game">
             <article>
